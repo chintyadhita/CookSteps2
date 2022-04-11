@@ -17,6 +17,11 @@
 		D81FEBD627FD847900A87380 /* DisukaiViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81FEBD527FD847900A87380 /* DisukaiViewController.swift */; };
 		D81FEBD827FD853F00A87380 /* ResepViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81FEBD727FD853F00A87380 /* ResepViewController.swift */; };
 		D81FEBDA27FD948400A87380 /* RiwayatTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D81FEBD927FD948400A87380 /* RiwayatTableViewCell.swift */; };
+		D86A493B28027C23001500FF /* ResepTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A493A28027C23001500FF /* ResepTableViewCell.swift */; };
+		D86A493D28027D4E001500FF /* DisukaiTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A493C28027D4E001500FF /* DisukaiTableViewCell.swift */; };
+		D86A493F28027FFB001500FF /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A493E28027FFB001500FF /* Food.swift */; };
+		D86A49432803B3C4001500FF /* CariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A49422803B3C4001500FF /* CariViewController.swift */; };
+		D86A49452803B3DA001500FF /* CariTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A49442803B3DA001500FF /* CariTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +37,11 @@
 		D81FEBD527FD847900A87380 /* DisukaiViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisukaiViewController.swift; sourceTree = "<group>"; };
 		D81FEBD727FD853F00A87380 /* ResepViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepViewController.swift; sourceTree = "<group>"; };
 		D81FEBD927FD948400A87380 /* RiwayatTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RiwayatTableViewCell.swift; sourceTree = "<group>"; };
+		D86A493A28027C23001500FF /* ResepTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResepTableViewCell.swift; sourceTree = "<group>"; };
+		D86A493C28027D4E001500FF /* DisukaiTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisukaiTableViewCell.swift; sourceTree = "<group>"; };
+		D86A493E28027FFB001500FF /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
+		D86A49422803B3C4001500FF /* CariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CariViewController.swift; sourceTree = "<group>"; };
+		D86A49442803B3DA001500FF /* CariTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CariTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,19 +74,40 @@
 		D81FEBBE27FD80A300A87380 /* Cooksteps2 */ = {
 			isa = PBXGroup;
 			children = (
+				D86A49412803B38E001500FF /* TableViewCell */,
+				D86A49402803B368001500FF /* Controller */,
 				D81FEBBF27FD80A300A87380 /* AppDelegate.swift */,
 				D81FEBC127FD80A300A87380 /* SceneDelegate.swift */,
 				D81FEBC327FD80A300A87380 /* ViewController.swift */,
 				D81FEBC527FD80A300A87380 /* Main.storyboard */,
-				D81FEBD727FD853F00A87380 /* ResepViewController.swift */,
-				D81FEBD327FD844F00A87380 /* RiwayatViewController.swift */,
-				D81FEBD527FD847900A87380 /* DisukaiViewController.swift */,
 				D81FEBC827FD80A400A87380 /* Assets.xcassets */,
 				D81FEBCA27FD80A400A87380 /* LaunchScreen.storyboard */,
 				D81FEBCD27FD80A400A87380 /* Info.plist */,
-				D81FEBD927FD948400A87380 /* RiwayatTableViewCell.swift */,
+				D86A493E28027FFB001500FF /* Food.swift */,
 			);
 			path = Cooksteps2;
+			sourceTree = "<group>";
+		};
+		D86A49402803B368001500FF /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D81FEBD727FD853F00A87380 /* ResepViewController.swift */,
+				D81FEBD327FD844F00A87380 /* RiwayatViewController.swift */,
+				D81FEBD527FD847900A87380 /* DisukaiViewController.swift */,
+				D86A49422803B3C4001500FF /* CariViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D86A49412803B38E001500FF /* TableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D81FEBD927FD948400A87380 /* RiwayatTableViewCell.swift */,
+				D86A493A28027C23001500FF /* ResepTableViewCell.swift */,
+				D86A493C28027D4E001500FF /* DisukaiTableViewCell.swift */,
+				D86A49442803B3DA001500FF /* CariTableViewCell.swift */,
+			);
+			path = TableViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,10 +182,15 @@
 			buildActionMask = 2147483647;
 			files = (
 				D81FEBC427FD80A300A87380 /* ViewController.swift in Sources */,
+				D86A493D28027D4E001500FF /* DisukaiTableViewCell.swift in Sources */,
 				D81FEBC027FD80A300A87380 /* AppDelegate.swift in Sources */,
+				D86A493B28027C23001500FF /* ResepTableViewCell.swift in Sources */,
+				D86A49452803B3DA001500FF /* CariTableViewCell.swift in Sources */,
 				D81FEBD827FD853F00A87380 /* ResepViewController.swift in Sources */,
+				D86A49432803B3C4001500FF /* CariViewController.swift in Sources */,
 				D81FEBDA27FD948400A87380 /* RiwayatTableViewCell.swift in Sources */,
 				D81FEBC227FD80A300A87380 /* SceneDelegate.swift in Sources */,
+				D86A493F28027FFB001500FF /* Food.swift in Sources */,
 				D81FEBD427FD844F00A87380 /* RiwayatViewController.swift in Sources */,
 				D81FEBD627FD847900A87380 /* DisukaiViewController.swift in Sources */,
 			);

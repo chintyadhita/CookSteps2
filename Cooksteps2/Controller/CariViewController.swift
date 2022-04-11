@@ -1,18 +1,19 @@
 //
-//  DisukaiViewController.swift
+//  CariViewController.swift
 //  Cooksteps2
 //
-//  Created by Cyntya Rahma Dita on 06/04/22.
+//  Created by Cyntya Rahma Dita on 11/04/22.
 //
 
 import UIKit
 
-class DisukaiViewController: UIViewController {
+class CariViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        title = "Disukai"
+        title = "Cari"
+
         // Do any additional setup after loading the view.
     }
     

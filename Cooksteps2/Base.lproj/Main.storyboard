@@ -34,7 +34,7 @@
         <scene sceneID="Rma-N5-giY">
             <objects>
                 <navigationController id="PNy-2d-qSU" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Resep" selectedImage="homekit" catalog="system" id="E9R-lI-tvU"/>
+                    <tabBarItem key="tabBarItem" title="Resep" image="homekit" catalog="system" id="E9R-lI-tvU"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="TkL-fr-ZdK">
                         <rect key="frame" x="0.0" y="44" width="414" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -47,7 +47,7 @@
             </objects>
             <point key="canvasLocation" x="-2438" y="560"/>
         </scene>
-        <!--Resep View Controller-->
+        <!--CookSteps-->
         <scene sceneID="P2c-AM-6Vz">
             <objects>
                 <viewController id="Pu6-hU-ecr" customClass="ResepViewController" customModule="Cooksteps2" customModuleProvider="target" sceneMemberID="viewController">
@@ -198,7 +198,7 @@
                             <constraint firstItem="bjA-6i-9h0" firstAttribute="bottom" secondItem="4eZ-ZO-8gx" secondAttribute="bottom" id="hdJ-pn-abN"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="9oP-3A-ef4"/>
+                    <navigationItem key="navigationItem" title="CookSteps" id="9oP-3A-ef4"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1e-rX-XRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -208,7 +208,7 @@
         <scene sceneID="9Ac-Iu-bAG">
             <objects>
                 <navigationController id="iSa-wt-TJn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Riwayat" selectedImage="gobackward" catalog="system" id="NQY-AK-QOz"/>
+                    <tabBarItem key="tabBarItem" title="Riwayat" image="gobackward" catalog="system" id="NQY-AK-QOz"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="bFb-05-kkJ">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -225,7 +225,7 @@
         <scene sceneID="ER8-f9-Sra">
             <objects>
                 <navigationController id="RXe-gW-iHe" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Disukai" selectedImage="suit.heart" catalog="system" id="vSd-z9-Nat"/>
+                    <tabBarItem key="tabBarItem" title="Disukai" image="suit.heart" catalog="system" id="vSd-z9-Nat"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="mEa-eq-gTs">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -242,7 +242,7 @@
         <scene sceneID="R2z-9h-QHh">
             <objects>
                 <navigationController id="zk2-md-mWv" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Cari" selectedImage="magnifyingglass" catalog="system" id="lHC-j6-2X9"/>
+                    <tabBarItem key="tabBarItem" title="Cari" image="magnifyingglass" catalog="system" id="lHC-j6-2X9"/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" largeTitles="YES" id="sAH-2g-9Ra">
                         <rect key="frame" x="0.0" y="44" width="414" height="96"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -267,7 +267,7 @@
                                 <rect key="frame" x="0.0" y="88" width="414" height="725"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="115" id="dQT-8z-TzD" customClass="RiwayatTableViewCell" customModule="Cooksteps2" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="riwayatTableViewCellID" rowHeight="115" id="dQT-8z-TzD" customClass="RiwayatTableViewCell" customModule="Cooksteps2" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="44.5" width="414" height="115"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="dQT-8z-TzD" id="yCJ-fW-9GY">
@@ -289,9 +289,10 @@
                                                 </label>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="G3C-tv-n8s">
                                                     <rect key="frame" x="318" y="42" width="66" height="31"/>
-                                                    <color key="tintColor" systemColor="systemOrangeColor"/>
                                                     <state key="normal" title="Button"/>
-                                                    <buttonConfiguration key="configuration" style="filled" title="Masak"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Masak">
+                                                        <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                    </buttonConfiguration>
                                                     <connections>
                                                         <action selector="didTapButton" destination="dQT-8z-TzD" eventType="touchUpInside" id="6Aj-an-aoi"/>
                                                     </connections>
@@ -322,12 +323,16 @@
                                         </tableViewCellContentView>
                                         <connections>
                                             <outlet property="button" destination="G3C-tv-n8s" id="dji-3S-h4x"/>
-                                            <outlet property="iconImageView" destination="D9C-y5-xBY" id="V9o-Pp-EWK"/>
+                                            <outlet property="imageName" destination="D9C-y5-xBY" id="U6i-E4-fd7"/>
                                             <outlet property="subtitle" destination="8v4-yh-Zpl" id="eSV-F4-AAm"/>
                                             <outlet property="title" destination="CEe-Eo-5xd" id="QVR-5l-vkF"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="nOL-P3-v7s" id="ut7-uZ-k2S"/>
+                                    <outlet property="delegate" destination="nOL-P3-v7s" id="6hd-0p-N1j"/>
+                                </connections>
                             </tableView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="EA3-7d-GdH"/>
@@ -355,14 +360,99 @@
                     <view key="view" contentMode="scaleToFill" id="6PO-Gt-p8h">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="6Rr-FF-y3T">
+                                <rect key="frame" x="0.0" y="88" width="414" height="725"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="tableViewCellID" id="U7T-wB-rkc" customClass="DisukaiTableViewCell" customModule="Cooksteps2" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="44.5" width="414" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U7T-wB-rkc" id="yfz-yR-bXj">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="100"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="rdF-os-Hvv">
+                                                    <rect key="frame" x="20" y="22" width="65" height="57"/>
+                                                </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="79p-48-2uD">
+                                                    <rect key="frame" x="107" y="21" width="187" height="30"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ptv-ip-eDd">
+                                                    <rect key="frame" x="107" y="58.5" width="177" height="14.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0zM-er-IBN">
+                                                    <rect key="frame" x="314" y="36" width="80" height="28"/>
+                                                    <state key="normal" title="Button"/>
+                                                    <buttonConfiguration key="configuration" style="filled" title="Masak">
+                                                        <color key="baseBackgroundColor" systemColor="systemOrangeColor"/>
+                                                    </buttonConfiguration>
+                                                </button>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="rdF-os-Hvv" firstAttribute="centerY" secondItem="yfz-yR-bXj" secondAttribute="centerY" id="3gN-C5-iu9"/>
+                                                <constraint firstItem="rdF-os-Hvv" firstAttribute="top" secondItem="yfz-yR-bXj" secondAttribute="topMargin" constant="11" id="561-XK-tG0"/>
+                                                <constraint firstItem="Ptv-ip-eDd" firstAttribute="top" secondItem="79p-48-2uD" secondAttribute="bottom" constant="7.5" id="5Fd-mx-Fmd"/>
+                                                <constraint firstItem="rdF-os-Hvv" firstAttribute="width" secondItem="yfz-yR-bXj" secondAttribute="height" multiplier="80:123" id="CY7-WW-mM1"/>
+                                                <constraint firstItem="0zM-er-IBN" firstAttribute="leading" secondItem="Ptv-ip-eDd" secondAttribute="trailing" constant="30" id="DWV-iR-1z9"/>
+                                                <constraint firstItem="Ptv-ip-eDd" firstAttribute="leading" secondItem="rdF-os-Hvv" secondAttribute="trailing" constant="22" id="ERO-EP-bl3"/>
+                                                <constraint firstItem="79p-48-2uD" firstAttribute="leading" secondItem="rdF-os-Hvv" secondAttribute="trailing" constant="22" id="JOe-y9-t9E"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="rdF-os-Hvv" secondAttribute="trailing" constant="294" id="Kde-96-qLJ"/>
+                                                <constraint firstItem="79p-48-2uD" firstAttribute="leading" secondItem="rdF-os-Hvv" secondAttribute="trailing" constant="22" id="Li6-ek-fEg"/>
+                                                <constraint firstItem="Ptv-ip-eDd" firstAttribute="top" secondItem="79p-48-2uD" secondAttribute="bottom" constant="7.5" id="UOS-s3-V5n"/>
+                                                <constraint firstItem="0zM-er-IBN" firstAttribute="leading" secondItem="Ptv-ip-eDd" secondAttribute="trailing" constant="30" id="XUV-s5-Qhf"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="Ptv-ip-eDd" secondAttribute="trailing" constant="100" id="XbR-Ce-bxc"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="0zM-er-IBN" secondAttribute="bottom" constant="25" id="faM-nH-CHj"/>
+                                                <constraint firstItem="Ptv-ip-eDd" firstAttribute="leading" secondItem="rdF-os-Hvv" secondAttribute="trailing" constant="22" id="i5v-1Y-8m0"/>
+                                                <constraint firstItem="0zM-er-IBN" firstAttribute="top" secondItem="yfz-yR-bXj" secondAttribute="topMargin" constant="25" id="iL8-bg-oFg"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ptv-ip-eDd" secondAttribute="bottom" constant="16" id="ifL-hI-WcA"/>
+                                                <constraint firstItem="0zM-er-IBN" firstAttribute="trailing" secondItem="yfz-yR-bXj" secondAttribute="trailingMargin" id="m1A-av-qHM"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Ptv-ip-eDd" secondAttribute="bottom" constant="16" id="o7z-4M-vmA"/>
+                                                <constraint firstItem="0zM-er-IBN" firstAttribute="leading" secondItem="79p-48-2uD" secondAttribute="trailing" constant="20" id="pDd-Fx-p8o"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="79p-48-2uD" secondAttribute="trailing" constant="100" id="uUs-gu-G6P"/>
+                                                <constraint firstItem="rdF-os-Hvv" firstAttribute="leading" secondItem="yfz-yR-bXj" secondAttribute="leadingMargin" id="vt0-6i-ibo"/>
+                                                <constraint firstItem="79p-48-2uD" firstAttribute="top" secondItem="yfz-yR-bXj" secondAttribute="topMargin" constant="10" id="ykj-iN-MfZ"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="rdF-os-Hvv" secondAttribute="bottom" constant="10" id="ysy-kk-2aB"/>
+                                                <constraint firstItem="79p-48-2uD" firstAttribute="top" secondItem="yfz-yR-bXj" secondAttribute="topMargin" constant="10" id="z5l-sf-rvF"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="button" destination="0zM-er-IBN" id="bEB-Eg-8Ne"/>
+                                            <outlet property="imageName" destination="rdF-os-Hvv" id="9YP-N4-4qG"/>
+                                            <outlet property="subtitle" destination="Ptv-ip-eDd" id="dcM-gw-Fmh"/>
+                                            <outlet property="title" destination="79p-48-2uD" id="MZC-BO-8gh"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="4hx-3t-f9a" id="cT5-Ue-egP"/>
+                                    <outlet property="delegate" destination="4hx-3t-f9a" id="gQc-7V-eVP"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="Cr3-WZ-1tz"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
+                        <constraints>
+                            <constraint firstItem="6Rr-FF-y3T" firstAttribute="top" secondItem="Cr3-WZ-1tz" secondAttribute="top" id="444-ZE-65u"/>
+                            <constraint firstItem="6Rr-FF-y3T" firstAttribute="trailing" secondItem="Cr3-WZ-1tz" secondAttribute="trailing" id="H7n-ib-oCS"/>
+                            <constraint firstItem="6Rr-FF-y3T" firstAttribute="bottom" secondItem="Cr3-WZ-1tz" secondAttribute="bottom" id="Nf4-xO-mcU"/>
+                            <constraint firstItem="6Rr-FF-y3T" firstAttribute="leading" secondItem="Cr3-WZ-1tz" secondAttribute="leading" id="mIa-zK-004"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="wch-93-mPc"/>
+                    <connections>
+                        <outlet property="disukaiTableView" destination="6Rr-FF-y3T" id="Z7P-cb-EXu"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AO4-VZ-mXV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-855" y="1274"/>
+            <point key="canvasLocation" x="-855.07246376811599" y="1273.6607142857142"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="s0w-ZZ-1YW">
@@ -396,17 +486,17 @@
             </objects>
             <point key="canvasLocation" x="-1646" y="2697"/>
         </scene>
-        <!--Cari-->
+        <!--Cari View Controller-->
         <scene sceneID="X80-ja-WJu">
             <objects>
-                <viewController id="TRV-Lf-okf" sceneMemberID="viewController">
+                <viewController id="TRV-Lf-okf" customClass="CariViewController" customModule="Cooksteps2" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="V0Q-M9-udM">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <viewLayoutGuide key="safeArea" id="qLE-kR-xK8"/>
                         <color key="backgroundColor" systemColor="systemGray6Color"/>
                     </view>
-                    <navigationItem key="navigationItem" title="Cari" id="9qc-PI-Eca"/>
+                    <navigationItem key="navigationItem" id="9qc-PI-Eca"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Sw-Tl-swg" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
