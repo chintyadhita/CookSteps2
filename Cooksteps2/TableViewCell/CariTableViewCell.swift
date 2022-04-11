@@ -8,6 +8,8 @@
 import UIKit
 
 class CariTableViewCell: UITableViewCell {
+    
+    static let identifier = "CariTableViewCell"
 
     override func awakeFromNib() {
         super.awakeFromNib()
@@ -19,5 +21,10 @@ class CariTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    @IBOutlet weak var imageName: UIImageView!
+    @IBOutlet weak var title: UILabel!
+    @IBOutlet weak var subtitle: UILabel!
+    @IBOutlet weak var button: UIButton!
 
 }
