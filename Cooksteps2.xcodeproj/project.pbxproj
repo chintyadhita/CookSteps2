@@ -22,6 +22,12 @@
 		D86A493F28027FFB001500FF /* Food.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A493E28027FFB001500FF /* Food.swift */; };
 		D86A49432803B3C4001500FF /* CariViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A49422803B3C4001500FF /* CariViewController.swift */; };
 		D86A49452803B3DA001500FF /* CariTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A49442803B3DA001500FF /* CariTableViewCell.swift */; };
+		D86A49492804E498001500FF /* SebelumnyaCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A49472804E498001500FF /* SebelumnyaCollectionViewCell.swift */; };
+		D86A494A2804E498001500FF /* SebelumnyaCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86A49482804E498001500FF /* SebelumnyaCollectionViewCell.xib */; };
+		D86A494D2804ECD0001500FF /* DishCategory.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A494C2804ECD0001500FF /* DishCategory.swift */; };
+		D86A49502805133E001500FF /* KategoriCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A494E2805133E001500FF /* KategoriCollectionViewCell.swift */; };
+		D86A49512805133E001500FF /* KategoriCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = D86A494F2805133E001500FF /* KategoriCollectionViewCell.xib */; };
+		D86A49542805151B001500FF /* Kategori.swift in Sources */ = {isa = PBXBuildFile; fileRef = D86A49532805151B001500FF /* Kategori.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +48,12 @@
 		D86A493E28027FFB001500FF /* Food.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Food.swift; sourceTree = "<group>"; };
 		D86A49422803B3C4001500FF /* CariViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CariViewController.swift; sourceTree = "<group>"; };
 		D86A49442803B3DA001500FF /* CariTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CariTableViewCell.swift; sourceTree = "<group>"; };
+		D86A49472804E498001500FF /* SebelumnyaCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SebelumnyaCollectionViewCell.swift; sourceTree = "<group>"; };
+		D86A49482804E498001500FF /* SebelumnyaCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SebelumnyaCollectionViewCell.xib; sourceTree = "<group>"; };
+		D86A494C2804ECD0001500FF /* DishCategory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DishCategory.swift; sourceTree = "<group>"; };
+		D86A494E2805133E001500FF /* KategoriCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KategoriCollectionViewCell.swift; sourceTree = "<group>"; };
+		D86A494F2805133E001500FF /* KategoriCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KategoriCollectionViewCell.xib; sourceTree = "<group>"; };
+		D86A49532805151B001500FF /* Kategori.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Kategori.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,8 +86,9 @@
 		D81FEBBE27FD80A300A87380 /* Cooksteps2 */ = {
 			isa = PBXGroup;
 			children = (
-				D86A49412803B38E001500FF /* TableViewCell */,
-				D86A49402803B368001500FF /* Controller */,
+				D86A494B2804ECA6001500FF /* Models */,
+				D86A49412803B38E001500FF /* CustomViewCell */,
+				D86A49402803B368001500FF /* Views */,
 				D81FEBBF27FD80A300A87380 /* AppDelegate.swift */,
 				D81FEBC127FD80A300A87380 /* SceneDelegate.swift */,
 				D81FEBC327FD80A300A87380 /* ViewController.swift */,
@@ -83,12 +96,11 @@
 				D81FEBC827FD80A400A87380 /* Assets.xcassets */,
 				D81FEBCA27FD80A400A87380 /* LaunchScreen.storyboard */,
 				D81FEBCD27FD80A400A87380 /* Info.plist */,
-				D86A493E28027FFB001500FF /* Food.swift */,
 			);
 			path = Cooksteps2;
 			sourceTree = "<group>";
 		};
-		D86A49402803B368001500FF /* Controller */ = {
+		D86A49402803B368001500FF /* Views */ = {
 			isa = PBXGroup;
 			children = (
 				D81FEBD727FD853F00A87380 /* ResepViewController.swift */,
@@ -96,18 +108,48 @@
 				D81FEBD527FD847900A87380 /* DisukaiViewController.swift */,
 				D86A49422803B3C4001500FF /* CariViewController.swift */,
 			);
-			path = Controller;
+			path = Views;
 			sourceTree = "<group>";
 		};
-		D86A49412803B38E001500FF /* TableViewCell */ = {
+		D86A49412803B38E001500FF /* CustomViewCell */ = {
 			isa = PBXGroup;
 			children = (
+				D86A495228051345001500FF /* KategoriCollectionViewCell */,
+				D86A49462804E354001500FF /* SebelumnyaCollectionViewCell */,
 				D81FEBD927FD948400A87380 /* RiwayatTableViewCell.swift */,
 				D86A493A28027C23001500FF /* ResepTableViewCell.swift */,
 				D86A493C28027D4E001500FF /* DisukaiTableViewCell.swift */,
 				D86A49442803B3DA001500FF /* CariTableViewCell.swift */,
 			);
-			path = TableViewCell;
+			path = CustomViewCell;
+			sourceTree = "<group>";
+		};
+		D86A49462804E354001500FF /* SebelumnyaCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D86A49472804E498001500FF /* SebelumnyaCollectionViewCell.swift */,
+				D86A49482804E498001500FF /* SebelumnyaCollectionViewCell.xib */,
+			);
+			path = SebelumnyaCollectionViewCell;
+			sourceTree = "<group>";
+		};
+		D86A494B2804ECA6001500FF /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D86A493E28027FFB001500FF /* Food.swift */,
+				D86A494C2804ECD0001500FF /* DishCategory.swift */,
+				D86A49532805151B001500FF /* Kategori.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		D86A495228051345001500FF /* KategoriCollectionViewCell */ = {
+			isa = PBXGroup;
+			children = (
+				D86A494E2805133E001500FF /* KategoriCollectionViewCell.swift */,
+				D86A494F2805133E001500FF /* KategoriCollectionViewCell.xib */,
+			);
+			path = KategoriCollectionViewCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -170,6 +212,8 @@
 			files = (
 				D81FEBCC27FD80A400A87380 /* LaunchScreen.storyboard in Resources */,
 				D81FEBC927FD80A400A87380 /* Assets.xcassets in Resources */,
+				D86A49512805133E001500FF /* KategoriCollectionViewCell.xib in Resources */,
+				D86A494A2804E498001500FF /* SebelumnyaCollectionViewCell.xib in Resources */,
 				D81FEBC727FD80A300A87380 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -185,14 +229,18 @@
 				D86A493D28027D4E001500FF /* DisukaiTableViewCell.swift in Sources */,
 				D81FEBC027FD80A300A87380 /* AppDelegate.swift in Sources */,
 				D86A493B28027C23001500FF /* ResepTableViewCell.swift in Sources */,
+				D86A49502805133E001500FF /* KategoriCollectionViewCell.swift in Sources */,
 				D86A49452803B3DA001500FF /* CariTableViewCell.swift in Sources */,
+				D86A494D2804ECD0001500FF /* DishCategory.swift in Sources */,
 				D81FEBD827FD853F00A87380 /* ResepViewController.swift in Sources */,
 				D86A49432803B3C4001500FF /* CariViewController.swift in Sources */,
 				D81FEBDA27FD948400A87380 /* RiwayatTableViewCell.swift in Sources */,
+				D86A49492804E498001500FF /* SebelumnyaCollectionViewCell.swift in Sources */,
 				D81FEBC227FD80A300A87380 /* SceneDelegate.swift in Sources */,
 				D86A493F28027FFB001500FF /* Food.swift in Sources */,
 				D81FEBD427FD844F00A87380 /* RiwayatViewController.swift in Sources */,
 				D81FEBD627FD847900A87380 /* DisukaiViewController.swift in Sources */,
+				D86A49542805151B001500FF /* Kategori.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

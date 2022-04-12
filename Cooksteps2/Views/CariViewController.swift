@@ -49,25 +49,25 @@ class CariViewController: UIViewController, UITableViewDelegate, UITableViewData
         let food1 = Food(id: "1", title: "Nasi Goreng", imageName: "nasgor", subtitle: "Nasi goreng")
         foodList.append(food1)
         
-        let food2 = Food(id: "2",title: "Mie Goreng", imageName: "migor", subtitle: "Nasi goreng")
+        let food2 = Food(id: "2",title: "Mie Goreng", imageName: "migor", subtitle: "mie, bakso, ayam")
         foodList.append(food2)
         
-        let food3 = Food(id: "3",title: "Ayam Goreng", imageName: "ayamgor", subtitle: "Nasi goreng")
+        let food3 = Food(id: "3",title: "Ayam Goreng", imageName: "ayamgor", subtitle: "ayam, minyak, laos")
         foodList.append(food3)
         
-        let food4 = Food(id: "4",title: "Tumis Kangkung", imageName: "kangkung", subtitle: "Nasi goreng")
+        let food4 = Food(id: "4",title: "Tumis Kangkung", imageName: "kangkung", subtitle: "kangkung, saus tiram, kecap")
         foodList.append(food4)
         
-        let food5 = Food(id: "5",title: "Tumis Kacang Panjang", imageName: "kacang", subtitle: "Nasi goreng")
+        let food5 = Food(id: "5",title: "Tumis Kacang Panjang", imageName: "kacang", subtitle: "Kacang panjang, tempe, kecap")
         foodList.append(food5)
         
         let food6 = Food(id: "6",title: "Omelete", imageName: "omelete", subtitle: "Nasi goreng")
         foodList.append(food6)
         
-        let food7 = Food(id: "7",title: "Sate", imageName: "sate", subtitle: "Nasi goreng")
+        let food7 = Food(id: "7",title: "Sate", imageName: "sate", subtitle: "Ayam, Kacang, Kecap")
         foodList.append(food7)
         
-        let food8 = Food(id: "8",title: "Soto", imageName: "soto", subtitle: "Nasi goreng")
+        let food8 = Food(id: "8",title: "Soto", imageName: "soto", subtitle: "Ayam, Bihun, Kunyit")
         foodList.append(food8)
     }
     

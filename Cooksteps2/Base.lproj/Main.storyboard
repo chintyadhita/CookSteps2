@@ -150,18 +150,23 @@
                                                         <nil key="highlightedColor"/>
                                                     </label>
                                                     <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="n40-8s-W3L">
-                                                        <rect key="frame" x="0.0" y="48" width="414" height="250"/>
+                                                        <rect key="frame" x="16" y="48" width="382" height="250"/>
                                                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                         <constraints>
+                                                            <constraint firstAttribute="width" constant="382" id="33u-rK-uPc"/>
                                                             <constraint firstAttribute="height" constant="250" id="HXz-qj-E48"/>
                                                         </constraints>
                                                         <collectionViewFlowLayout key="collectionViewLayout" automaticEstimatedItemSize="YES" minimumLineSpacing="10" minimumInteritemSpacing="10" id="vTn-ES-P3z">
-                                                            <size key="itemSize" width="128" height="128"/>
+                                                            <size key="itemSize" width="382" height="70"/>
                                                             <size key="headerReferenceSize" width="0.0" height="0.0"/>
                                                             <size key="footerReferenceSize" width="0.0" height="0.0"/>
-                                                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                                            <inset key="sectionInset" minX="16" minY="0.0" maxX="16" maxY="0.0"/>
                                                         </collectionViewFlowLayout>
                                                         <cells/>
+                                                        <connections>
+                                                            <outlet property="dataSource" destination="Pu6-hU-ecr" id="wZv-9m-RUF"/>
+                                                            <outlet property="delegate" destination="Pu6-hU-ecr" id="kP7-qF-4Mj"/>
+                                                        </connections>
                                                     </collectionView>
                                                 </subviews>
                                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -169,8 +174,10 @@
                                                     <constraint firstItem="bOa-IY-vqZ" firstAttribute="top" secondItem="BCu-bL-kWQ" secondAttribute="top" constant="16" id="Apg-Eh-lHa"/>
                                                     <constraint firstAttribute="trailing" secondItem="bOa-IY-vqZ" secondAttribute="trailing" constant="16" id="GKg-BC-U9c"/>
                                                     <constraint firstAttribute="trailing" secondItem="n40-8s-W3L" secondAttribute="trailing" id="MTQ-2a-TZX"/>
+                                                    <constraint firstItem="n40-8s-W3L" firstAttribute="leading" secondItem="BCu-bL-kWQ" secondAttribute="leading" constant="16" id="U8w-vg-AeO"/>
                                                     <constraint firstAttribute="bottom" secondItem="n40-8s-W3L" secondAttribute="bottom" id="gay-Mg-zYu"/>
                                                     <constraint firstItem="n40-8s-W3L" firstAttribute="top" secondItem="bOa-IY-vqZ" secondAttribute="bottom" constant="8" id="h00-5r-Gjf"/>
+                                                    <constraint firstAttribute="trailing" secondItem="n40-8s-W3L" secondAttribute="trailing" constant="16" id="mke-u9-HlK"/>
                                                     <constraint firstItem="bOa-IY-vqZ" firstAttribute="leading" secondItem="BCu-bL-kWQ" secondAttribute="leading" constant="16" id="nGe-gy-AyX"/>
                                                     <constraint firstItem="n40-8s-W3L" firstAttribute="leading" secondItem="BCu-bL-kWQ" secondAttribute="leading" id="rr3-wt-RAi"/>
                                                 </constraints>
@@ -199,6 +206,9 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="CookSteps" id="9oP-3A-ef4"/>
+                    <connections>
+                        <outlet property="sebelumnyaCollectionView" destination="n40-8s-W3L" id="hK9-Ha-ubR"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="N1e-rX-XRd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
